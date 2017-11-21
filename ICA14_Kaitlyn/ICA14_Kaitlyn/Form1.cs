@@ -124,7 +124,7 @@ namespace ICA14_Kaitlyn
                         lock (BlockList)
                         {
                             //then we add the block to the list using the falling block one
-                            BlockList.Add(new FallingBlock(p));
+                            BlockList.Add(new DrunkBlock(p));
                         }
                     }
 
@@ -134,7 +134,7 @@ namespace ICA14_Kaitlyn
                         lock (BlockList)
                         {
                             //then we add the block to the list using the falling block one
-                            BlockList.Add(new FallingBlock(p));
+                            BlockList.Add(new ColourBlock(p));
                         }
                     }
 

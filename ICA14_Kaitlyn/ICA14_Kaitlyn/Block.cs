@@ -45,7 +45,7 @@ namespace ICA14_Kaitlyn
             Block arg = obj as Block;
             //if the block IS the block return false
             //so you dont compare to yourseld
-            if (ReferenceEquals(arg.retang, retang))
+            if (ReferenceEquals(this, arg))
                 return false;
             //return true if they intersect 
             //and youre not the block youre looking at
@@ -76,10 +76,10 @@ namespace ICA14_Kaitlyn
             //make sure its black
             canvas.AddRectangle((int)copy.X,(int)copy.Y,(int)copy.Width,(int)copy.Height, Color.Black);
             //if the rectangle is out of bounds on the y turn outside to true
-            if (copy.Height > canvas.ScaledHeight)
+            if (copy.X+copy.Width > canvas.ScaledWidth)
                 Outside = true;
             //if the rectangle is out of bounds on the x turn outside true
-            if (copy.Width > canvas.ScaledWidth)
+            if (copy.Y +copy.Height > canvas.ScaledHeight)
                 Outside = true;
         }
     }
@@ -101,15 +101,17 @@ namespace ICA14_Kaitlyn
         public override void Move(List<Block> blList)
         {
             //if were outside we return and do nothing
-            if (Outside)
-                return;
-            //else using a lambda we go throug each element and
-            //if we dont intersect with anything then we increase our y position
-            //by our velocity
-           if( blList.TrueForAll(bl => !bl.Equals(this)))
+            if (!Outside)
             {
-                this.retang.Y += Vel;
-            }
+                //else using a lambda we go throug each element and
+                //if we dont intersect with anything then we increase our y position
+                //by our velocity
+                if (blList.TrueForAll(bl => !bl.Equals(this)))
+                {
+                    this.retang.Y += Vel;
+                }
+            }   
+            
         }
 
         //override for show block
@@ -122,4 +124,93 @@ namespace ICA14_Kaitlyn
         }
 
     } 
+
+
+    //drunnk block
+    class DrunkBlock: Block
+    {
+        //constant velocity
+        const float Vel = 3;
+        //lateral velocity
+        float Lat = 0;
+        //ctor that will accept a point and using that point we call upon 
+        //our base class with THAT SPECIFIC CTOR (aka the only CTOR we have for this)
+        public DrunkBlock(PointF point): base(point)
+        {
+            retang.Width = 30;
+            retang.Height = 60;
+        }
+
+        //override for our empty move method
+        public override void Move(List<Block> blList)
+        {
+            //if were outside we return and do nothing
+            if (!Outside)
+            {
+                //else using a lambda we go throug each element and
+                //if we dont intersect with anything then we increase our y position
+                //by our velocity
+                if (blList.TrueForAll(bl => !bl.Equals(this)))
+                {
+                    this.retang.Y += Vel;
+                    //create the lat velocitry using a transfer func
+                    Lat = (float)rand.NextDouble() * 2 - 1;
+                    this.retang.X += Lat;
+
+                }
+            }
+
+        }
+
+        //override for show block
+        public override void ShowBlock(CDrawer canvas)
+        {
+            //using the base canvas we created...
+            base.ShowBlock(canvas);
+            //we add a rectangle thats white and uses our protected values
+            canvas.AddRectangle((int)retang.X, (int)retang.Y, (int)retang.Width, (int)retang.Height, Color.LightPink);
+        }
+    }
+
+
+    class ColourBlock: Block
+    {
+        //initialize the velocity and random color
+        const float Vel = 3;
+        private Color col = RandColor.GetColor();
+
+        //ctor that will accept a point and using that point we call upon 
+        //our base class with THAT SPECIFIC CTOR (aka the only CTOR we have for this)
+        public ColourBlock(PointF point): base(point)
+        {
+            retang.Width = 60;
+            retang.Height = 30;
+        }
+
+        //override for our empty move method
+        public override void Move(List<Block> blList)
+        {
+            //if were outside we return and do nothing
+            if (!Outside)
+            {
+                //else using a lambda we go throug each element and
+                //if we dont intersect with anything then we increase our y position
+                //by our velocity
+                if (blList.TrueForAll(bl => !bl.Equals(this)))
+                {
+                    this.retang.Y += Vel;
+                }
+            }
+
+        }
+
+        //override for show block
+        public override void ShowBlock(CDrawer canvas)
+        {
+            //using the base canvas we created...
+            base.ShowBlock(canvas);
+            //we add a rectangle thats white and uses our protected values
+            canvas.AddRectangle((int)retang.X, (int)retang.Y, (int)retang.Width, (int)retang.Height, col);
+        }
+    }
 }
