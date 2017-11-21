@@ -1,0 +1,11 @@
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\bin\Debug\ICA14_Kaitlyn.exe.config
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\bin\Debug\ICA14_Kaitlyn.exe
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\bin\Debug\ICA14_Kaitlyn.pdb
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\bin\Debug\GDIDrawer.dll
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\bin\Debug\Kaitlyn_Drawers.dll
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\obj\Debug\ICA14_Kaitlyn.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\obj\Debug\ICA14_Kaitlyn.Form1.resources
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\obj\Debug\ICA14_Kaitlyn.Properties.Resources.resources
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\obj\Debug\ICA14_Kaitlyn.csproj.GenerateResource.Cache
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\obj\Debug\ICA14_Kaitlyn.exe
+C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\ICA14_Kaitlyn\ICA14_Kaitlyn\obj\Debug\ICA14_Kaitlyn.pdb

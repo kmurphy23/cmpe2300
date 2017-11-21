@@ -73,12 +73,14 @@ namespace ICA14_Kaitlyn
             }
         }
 
+
         //second the show/render thread
         private void ShowThread()
         {
             //looping forever and ever
             while (true)
             {
+                drawer.Clear();
                 //lock using the list
                 lock (BlockList)
                 {
@@ -116,7 +118,49 @@ namespace ICA14_Kaitlyn
                         
                     }
 
+                    //if the key code is d call drunk blocks
+                    if(input == Keys.D)
+                    {
+                        lock (BlockList)
+                        {
+                            //then we add the block to the list using the falling block one
+                            BlockList.Add(new FallingBlock(p));
+                        }
+                    }
+
+                    //if key code is c 
+                    if (input == Keys.C)
+                    {
+                        lock (BlockList)
+                        {
+                            //then we add the block to the list using the falling block one
+                            BlockList.Add(new FallingBlock(p));
+                        }
+                    }
+
+                    //if the key is escape
+                    if(input == Keys.Escape)
+                    {
+                        lock (BlockList)
+                        {
+                            //if outside bool is true then we remove it 
+                            BlockList.RemoveAll(B => B.Outside);
+                        }
+                    }
+
+                    //if f1 is pressed
+                    if(input == Keys.F1)
+                    {
+                        //lock it so we cant use it
+                        lock (BlockList)
+                        {
+                            BlockList.Clear();
+                        }
+                    }
+
+
                 }
+                //clear the input key 
                 input = Keys.None;
                 //sleep for 50 ms
                 Thread.Sleep(50);

@@ -32,11 +32,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="GDIDrawer">
-      <HintPath>..\..\ICA05_Kaitlyn\GDIDrawer.dll</HintPath>
+    <Reference Include="GDIDrawer, Version=1.4.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\GDIDrawer.dll</HintPath>
     </Reference>
-    <Reference Include="Kaitlyn_Drawers">
-      <HintPath>..\..\Kaitlyn_Drawers\Kaitlyn_Drawers\obj\Debug\Kaitlyn_Drawers.dll</HintPath>
+    <Reference Include="Kaitlyn_Drawers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Kaitlyn_Drawers.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -88,6 +90,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cats.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GDIDrawer.dll" />
+    <Content Include="Kaitlyn_Drawers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
