@@ -157,45 +157,14 @@ namespace ICA14_Kaitlyn
                             BlockList.Clear();
                         }
                     }
-
-
+                    //clear the input key 
+                    input = Keys.None;
                 }
-                //clear the input key 
-                input = Keys.None;
                 //sleep for 50 ms
                 Thread.Sleep(50);
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
         //this is what we get from OUR DRAWER 
         //everything is passed into us that we need like the keycode the bool and the drawer
         private void Drawer_KeyboardEvent(bool bIsDown, Keys keyCode, GDIDrawer.CDrawer dr)

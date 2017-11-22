@@ -169,6 +169,7 @@ namespace ICA14_Kaitlyn
             base.ShowBlock(canvas);
             //we add a rectangle thats white and uses our protected values
             canvas.AddRectangle((int)retang.X, (int)retang.Y, (int)retang.Width, (int)retang.Height, Color.LightPink);
+            canvas.AddText("\u263A", 30,(int)retang.X+5,(int)retang.Y+20,20,20,Color.Black);
         }
     }
 
@@ -209,6 +210,9 @@ namespace ICA14_Kaitlyn
         {
             //using the base canvas we created...
             base.ShowBlock(canvas);
+            //changing the alpha of the colour so they fade away 
+            if ((col.A-Vel) >= 0)
+                col = Color.FromArgb(col.A - (int)Vel, col);
             //we add a rectangle thats white and uses our protected values
             canvas.AddRectangle((int)retang.X, (int)retang.Y, (int)retang.Width, (int)retang.Height, col);
         }
