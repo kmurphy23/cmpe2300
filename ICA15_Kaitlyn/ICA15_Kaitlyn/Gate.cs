@@ -126,4 +126,13 @@ namespace ICA15_Kaitlyn
             return "AND";
         }
     }
+
+    /// this method will take all of our data and make a table out of it
+    /// <param name="GIn">this is the gate we are passing in</param>
+    /// <returns>the built string of our gate</returns>
+    public string ToTable(Gate GIn)
+    {
+        //initialize a new stringbuilder
+        StringBuilder writer = new StringBuilder();
+    }
 }
