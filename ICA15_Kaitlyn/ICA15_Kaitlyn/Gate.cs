@@ -71,7 +71,7 @@ namespace ICA15_Kaitlyn
         //this override will set the value of the output to the NAND of the inputs
         public override void vLatch()
         {
-            _output = _input1 ^ _input1;
+            _output = !(_input1 & _input2);
         }
 
         //as always the name override is to return the name of the gate
@@ -87,7 +87,7 @@ namespace ICA15_Kaitlyn
         //this override will return the or of the 2 inputs
         public override void vLatch()
         {
-            _output = _input1 || _input2;
+            _output = _input1 | _input2;
         }
         //as always the name override is to return the name of the gate
         public override string vName()
@@ -118,7 +118,8 @@ namespace ICA15_Kaitlyn
         //this is the overriden latch method from the NAND class 
         public override void vLatch()
         {
-            //need help with this one please 
+            base.vLatch();
+            _output = !_output;
         }
         //this is the name overriden from the NAND class 
         public override string vName()
@@ -126,13 +127,5 @@ namespace ICA15_Kaitlyn
             return "AND";
         }
     }
-
-    /// this method will take all of our data and make a table out of it
-    /// <param name="GIn">this is the gate we are passing in</param>
-    /// <returns>the built string of our gate</returns>
-    public string ToTable(Gate GIn)
-    {
-        //initialize a new stringbuilder
-        StringBuilder writer = new StringBuilder();
-    }
+    
 }

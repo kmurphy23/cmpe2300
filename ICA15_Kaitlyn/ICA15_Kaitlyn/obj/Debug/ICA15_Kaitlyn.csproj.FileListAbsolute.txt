@@ -1,1 +1,8 @@
 C:\Users\kmurphy23\Desktop\Kaitlyn_2300\ICAs\ICA15_Kaitlyn\ICA15_Kaitlyn\obj\Debug\ICA15_Kaitlyn.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Desktop\cmpe2300-master (1)\cmpe2300-master\ICA15_Kaitlyn\ICA15_Kaitlyn\bin\Debug\ICA15_Kaitlyn.exe.config
+C:\Users\kmurphy23\Desktop\cmpe2300-master (1)\cmpe2300-master\ICA15_Kaitlyn\ICA15_Kaitlyn\bin\Debug\ICA15_Kaitlyn.exe
+C:\Users\kmurphy23\Desktop\cmpe2300-master (1)\cmpe2300-master\ICA15_Kaitlyn\ICA15_Kaitlyn\bin\Debug\ICA15_Kaitlyn.pdb
+C:\Users\kmurphy23\Desktop\cmpe2300-master (1)\cmpe2300-master\ICA15_Kaitlyn\ICA15_Kaitlyn\obj\Debug\ICA15_Kaitlyn.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Desktop\cmpe2300-master (1)\cmpe2300-master\ICA15_Kaitlyn\ICA15_Kaitlyn\obj\Debug\ICA15_Kaitlyn.csproj.CoreCompileInputs.cache
+C:\Users\kmurphy23\Desktop\cmpe2300-master (1)\cmpe2300-master\ICA15_Kaitlyn\ICA15_Kaitlyn\obj\Debug\ICA15_Kaitlyn.exe
+C:\Users\kmurphy23\Desktop\cmpe2300-master (1)\cmpe2300-master\ICA15_Kaitlyn\ICA15_Kaitlyn\obj\Debug\ICA15_Kaitlyn.pdb
