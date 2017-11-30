@@ -76,7 +76,7 @@ namespace Kaitlyn_Drawers
     {
         
         //default constructor that makes the base canvas size based on the image sent in
-        public picClass(Bitmap image) : base(image.Width,image.Height)
+        public picClass(Bitmap image,bool Gray, bool bCountinousUpdate =false) : base(image.Width,image.Height,bCountinousUpdate)
         {
             //goes through each pixel on the width
             for (int x = 0; x < ScaledWidth; x++)
@@ -86,18 +86,25 @@ namespace Kaitlyn_Drawers
                 {
                     //get the old colour of each pics
                     Color c = image.GetPixel(x, y);
-                    //find the average colour(this will give us the gray colour)
-                    int avg = (c.R + c.B + c.G) / 3;
-                    //set that image to the new colour version of it
-                    SetBBPixel(x, y, Color.FromArgb(avg, avg, avg));
+                    if (Gray)
+                    {
+                        //find the average colour(this will give us the gray colour)
+                        int avg = (c.R + c.B + c.G) / 3;
+                        c = Color.FromArgb(avg, avg, avg);
+                        //set that image to the new colour version of it
+                    }
+                    //otherwise the color as the color
+                    SetBBPixel(x, y,c);
                 }
             }
 
+            Render();
         }
 
         public new void Render()
         {
             AddText($"{ScaledWidth} x {ScaledHeight} : {this.GetType().ToString()}", 10, 0, 0, 300, 50, Color.Red);
+            base.Render();
         }
     }
 

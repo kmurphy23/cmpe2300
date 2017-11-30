@@ -4,3 +4,9 @@ C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\Kaitlyn_D
 C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\Kaitlyn_Drawers\Kaitlyn_Drawers\obj\Debug\Kaitlyn_Drawers.csprojResolveAssemblyReference.cache
 C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\Kaitlyn_Drawers\Kaitlyn_Drawers\obj\Debug\Kaitlyn_Drawers.dll
 C:\Users\kmurphy23\Documents\Visual Studio 2017\Projects\cmpe2300\ICAs\Kaitlyn_Drawers\Kaitlyn_Drawers\obj\Debug\Kaitlyn_Drawers.pdb
+C:\Users\kmurphy23\Downloads\cmpe2300-master\cmpe2300-master\Kaitlyn_Drawers\Kaitlyn_Drawers\bin\Debug\Kaitlyn_Drawers.dll
+C:\Users\kmurphy23\Downloads\cmpe2300-master\cmpe2300-master\Kaitlyn_Drawers\Kaitlyn_Drawers\bin\Debug\Kaitlyn_Drawers.pdb
+C:\Users\kmurphy23\Downloads\cmpe2300-master\cmpe2300-master\Kaitlyn_Drawers\Kaitlyn_Drawers\bin\Debug\GDIDrawer.dll
+C:\Users\kmurphy23\Downloads\cmpe2300-master\cmpe2300-master\Kaitlyn_Drawers\Kaitlyn_Drawers\obj\Debug\Kaitlyn_Drawers.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Downloads\cmpe2300-master\cmpe2300-master\Kaitlyn_Drawers\Kaitlyn_Drawers\obj\Debug\Kaitlyn_Drawers.dll
+C:\Users\kmurphy23\Downloads\cmpe2300-master\cmpe2300-master\Kaitlyn_Drawers\Kaitlyn_Drawers\obj\Debug\Kaitlyn_Drawers.pdb
