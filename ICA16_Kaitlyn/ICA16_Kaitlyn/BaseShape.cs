@@ -36,6 +36,7 @@ namespace ICA16_Kaitlyn
         public void Paint() // NVI - public Paint()
         {
             VirtualPaint(); // invokes VirtualPaint()
+            _canvas.AddCenteredEllipse(_pt, 4, 4, Color.Gold);
         }
         protected virtual Point VirtualMove()
         {

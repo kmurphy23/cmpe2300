@@ -27,9 +27,9 @@ namespace ICA16_Kaitlyn
         {
             InitializeComponent();
             //Initialize the canvas
-            canvas = new Kaitlyn_Drawers.picClass(Properties.Resources.persian_cats_and_kittens_1);
-            //canvas.ContinuousUpdate = false;
+            canvas = new Kaitlyn_Drawers.picClass(Properties.Resources.persian_cats_and_kittens_1,true,false);
             BaseShape._canvas = canvas;
+            canvas.Render();
         }
 
         private void Form1_Load(object sender, EventArgs e)

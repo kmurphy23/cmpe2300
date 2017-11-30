@@ -90,9 +90,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Kaitlyn_Drawers.dll" />
     <None Include="Resources\persian-cats-and-kittens-1.jpg" />
     <None Include="Resources\space.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kaitlyn_Drawers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
