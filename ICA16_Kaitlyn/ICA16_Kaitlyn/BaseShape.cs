@@ -9,7 +9,7 @@ using Kaitlyn_Drawers;
 
 namespace ICA16_Kaitlyn
 {
-    class BaseShape
+    public abstract class BaseShape
         
     {
         public static  Kaitlyn_Drawers.picClass _canvas { get; set; } // Change to your PicDrawer

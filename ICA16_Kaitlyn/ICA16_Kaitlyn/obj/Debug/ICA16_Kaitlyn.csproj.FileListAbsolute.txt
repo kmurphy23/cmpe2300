@@ -1,0 +1,12 @@
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\obj\Debug\ICA16_Kaitlyn.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\obj\Debug\ICA16_Kaitlyn.Form1.resources
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\obj\Debug\ICA16_Kaitlyn.Properties.Resources.resources
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\obj\Debug\ICA16_Kaitlyn.csproj.GenerateResource.Cache
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\obj\Debug\ICA16_Kaitlyn.csproj.CoreCompileInputs.cache
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\bin\Debug\ICA16_Kaitlyn.exe.config
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\bin\Debug\ICA16_Kaitlyn.exe
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\bin\Debug\ICA16_Kaitlyn.pdb
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\bin\Debug\GDIDrawer.dll
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\bin\Debug\Kaitlyn_Drawers.dll
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\obj\Debug\ICA16_Kaitlyn.exe
+C:\Users\kmurphy23\Desktop\CMPE2300svn\cmpe2300\ICAs\ICA16_Kaitlyn\ICA16_Kaitlyn\obj\Debug\ICA16_Kaitlyn.pdb
