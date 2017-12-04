@@ -1,0 +1,18 @@
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\bin\Debug\Lab02_Kaitlyn.exe.config
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\bin\Debug\Lab02_Kaitlyn.exe
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\bin\Debug\Lab02_Kaitlyn.pdb
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.csprojResolveAssemblyReference.cache
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.Form1.resources
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.Properties.Resources.resources
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.csproj.GenerateResource.Cache
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.exe
+c:\users\kmurphy23\documents\visual studio 2017\Projects\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.pdb
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\bin\Debug\Lab02_Kaitlyn.exe.config
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\bin\Debug\Lab02_Kaitlyn.exe
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\bin\Debug\Lab02_Kaitlyn.pdb
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.Form1.resources
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.Properties.Resources.resources
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.csproj.GenerateResource.Cache
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.exe
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab02_Kaitlyn\Lab02_Kaitlyn\obj\Debug\Lab02_Kaitlyn.pdb

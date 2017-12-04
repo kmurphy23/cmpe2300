@@ -1,0 +1,9 @@
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\bin\Debug\New lab 1.exe.config
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\bin\Debug\New lab 1.exe
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\bin\Debug\New lab 1.pdb
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\obj\Debug\New lab 1.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\obj\Debug\New_lab_1.Form1.resources
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\obj\Debug\New_lab_1.Properties.Resources.resources
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\obj\Debug\New lab 1.csproj.GenerateResource.Cache
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\obj\Debug\New lab 1.exe
+C:\Users\kmurphy23\Desktop\Kaitlyn_2300\Labs\Lab01\New lab 1\obj\Debug\New lab 1.pdb
