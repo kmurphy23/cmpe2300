@@ -164,6 +164,19 @@ namespace Lab03_Kaitlyn
             //new maxSpeed is the opposite of the old maxSpeed this will make it toggle
             MaxSpeed = !MaxSpeed;
         }
+
+        /// <summary>
+        /// GetSafeScore - Get the score of the car when it exits the screen
+        /// </summary>
+        /// <returns>The score of the car</returns>
+        public abstract int GetSafeScore();
+
+        
+        /// <summary>
+        /// GetHitScore - Get the score of the car when it hits another car
+        /// </summary>
+        /// <returns>The negative score of the car</returns>
+        public abstract int GetHitScore();
     }
 
 
@@ -296,6 +309,26 @@ namespace Lab03_Kaitlyn
             //add the car wit hte body and the color
             canvas.AddRectangle(hitBox, col);
         }
+
+        /// <summary>
+        /// When the car reaches the other side it increases the  
+        /// safe score of the game
+        /// </summary>
+        /// <returns> returns the int that is the score</returns>
+        public override int GetSafeScore()
+        {
+            return Math.Abs((int)Speed);
+        }
+
+        /// <summary>
+        /// if the car is hit on the way out of the game the we will 
+        /// decrease the score of the game
+        /// </summary>
+        /// <returns>returns the negative of the score</returns>
+        public override int GetHitScore()
+        {
+            return GetSafeScore() * -1;
+        }
     }
 
     class HAmbulance : HorizontalCar, IAnimateable
@@ -348,6 +381,26 @@ namespace Lab03_Kaitlyn
                 light1 = Color.Blue;
                 light2 = Color.Red;
             }
+        }
+
+        /// <summary>
+        /// When the car reaches the other side it increases the  
+        /// safe score of the game
+        /// </summary>
+        /// <returns> returns the int that is the score</returns>
+        public override int GetSafeScore()
+        {
+            return Math.Abs((int)Speed);
+        }
+
+        /// <summary>
+        /// if the car is hit on the way out of the game the we will 
+        /// decrease the score of the game
+        /// </summary>
+        /// <returns>returns the negative of the score</returns>
+        public override int GetHitScore()
+        {
+            return GetSafeScore() * -1;
         }
     }
 }
