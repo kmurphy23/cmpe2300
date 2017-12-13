@@ -46,7 +46,7 @@ namespace Lab03_Kaitlyn
             Car temp = null;
 
             //Pick a random car with a random speed
-            switch (Car.rand.Next(4))
+            switch (Car.rand.Next(8))
             {
                 case 0:
                     temp = new VSedan(4);
@@ -59,6 +59,18 @@ namespace Lab03_Kaitlyn
                     break;
                 case 3:
                     temp = new HAmbulance(-7);
+                    break;
+                case 4:
+                    temp = new FireTruck(9);
+                    break;
+                case 5:
+                    temp = new FireTruck(-9);
+                    break;
+                case 6:
+                    temp = new SmartCar(8);
+                    break;
+                case 7:
+                    temp = new SmartCar(-8);
                     break;
             }
 
@@ -79,6 +91,7 @@ namespace Lab03_Kaitlyn
             }
             //create a point that we will put the ouse click into
             Point mouseClick;
+            //if we click on the canvas then we check to see if we clicked on the car 
             if (canvas.GetLastMouseLeftClick(out mouseClick))
             {
                 //now that we have a mouseclick check if its on a car
@@ -112,32 +125,32 @@ namespace Lab03_Kaitlyn
                     //remove the car 
                     CarList.RemoveAll(input => object.ReferenceEquals(input, Vech));
                 }
+            }
+            //write the score the form text 
+            Text = $"Score = {score} points";
 
-                //write the score the form text 
-                Text = $"Score = {score} points";
+            //Animate all the cars that support IAnimatable
+            CarList.ForEach(car => (car as IAnimateable)?.Animate());
 
-                //Animate all the cars that support IAnimatable
-                CarList.ForEach(car => (car as IAnimateable)?.Animate());
+            //Clear and render all the cars
+            canvas.Clear();
+            CarList.ForEach(car => car.ShowCar());
+            canvas.Render();
 
-                //Clear and render all the cars
+            //End the game if score is too low
+            if (score < 0)
+            {
+                //clear the canvas 
                 canvas.Clear();
-                CarList.ForEach(car => car.ShowCar());
+                //add text to the canvas
+                canvas.AddText("Game Over", 35, Color.Red);
+                //render just the text
                 canvas.Render();
+                //disable both timers
+                CarSpawn.Enabled = false;
+                GameTime.Enabled = false;
+         
 
-                //End the game if score is too low
-                if (score < 0)
-                {
-                    //clear the canvas 
-                    canvas.Clear();
-                    //add text to the canvas
-                    canvas.AddText("Game Over", 35, Color.Red);
-                    //render just the text
-                    canvas.Render();
-                    //disable both timers
-                    CarSpawn.Enabled = false;
-                    GameTime.Enabled = false;
-
-                }
             }
         }
     }

@@ -113,8 +113,6 @@ namespace Lab03_Kaitlyn
         {
             VMoveCar();
         }
-
-
         public override bool Equals(object obj)
         {
             //if the obj passed into the override is not a car or it is itself we will set it to false
@@ -200,7 +198,7 @@ namespace Lab03_Kaitlyn
                 //we need to start outside of the right side of the screen
                 XCoor = canvas.ScaledWidth;
                 //we set the y coordinates to a random selection of the left array 
-                YCoor = Right[rand.Next(Left.Length)];
+                YCoor = Left[rand.Next(Left.Length)];
             }
             //else if the speed is positive we are going right
             else if(Speed > 0)
@@ -317,7 +315,7 @@ namespace Lab03_Kaitlyn
         /// <returns> returns the int that is the score</returns>
         public override int GetSafeScore()
         {
-            return Math.Abs((int)Speed);
+            return Math.Abs((int)Speed + Width);
         }
 
         /// <summary>
@@ -360,6 +358,7 @@ namespace Lab03_Kaitlyn
             Rectangle hitBox = GetRect();
             //add the car wit hte body and the color
             canvas.AddRectangle(hitBox, Color.White);
+           
             //Add the animated lights
             canvas.AddRectangle(hitBox.X + Width / 2 - 2, hitBox.Y, 4, Height / 2, light1);
             canvas.AddRectangle(hitBox.X + Width / 2 - 2, hitBox.Y + Height / 2, 4, Height / 2, light2);
@@ -390,7 +389,7 @@ namespace Lab03_Kaitlyn
         /// <returns> returns the int that is the score</returns>
         public override int GetSafeScore()
         {
-            return Math.Abs((int)Speed);
+            return Math.Abs((int)Speed + Width);
         }
 
         /// <summary>
@@ -403,4 +402,147 @@ namespace Lab03_Kaitlyn
             return GetSafeScore() * -1;
         }
     }
+
+    class FireTruck : HorizontalCar, IAnimateable
+    {
+        //colors on top of the car 
+        Color light1 = Color.Blue;
+        Color light2 = Color.Red;
+        /// <summary>
+        /// derived from the base vertical class
+        /// </summary>
+        /// <param name="speed">initializes the speed of the car</param>
+        /// <param name="width">initializes the width of the car </param>
+        /// <param name="height">and finally the height of the car</param>
+        public FireTruck(float speed = 9, int width = 200, int height = 40) : base(speed, width, height, Color.Black) { }
+
+
+        /// <summary>
+        /// override of the getrect method that will create the x and y of the car
+        /// </summary>
+        /// <returns> returns the new rectangle</returns>
+        public override Rectangle GetRect()
+        {
+            return new Rectangle((int)XCoor, (int)YCoor, Width, Height); ;
+        }
+
+        protected override void VShowCar()
+        {
+            //get a box that will be our 'hitbox'
+            Rectangle hitBox = GetRect();
+            //add the car wit hte body and the color
+            canvas.AddRectangle(hitBox, Color.DarkRed);
+            //Add the animated lights
+            if(Speed > 0)
+            {
+                canvas.AddRectangle(hitBox.X + Width / 2 + 50, hitBox.Y, 4, Height / 2, light1);
+                canvas.AddRectangle(hitBox.X + Width / 2 + 50, hitBox.Y + Height / 2, 4, Height / 2, light2);
+            }
+            if (Speed < 0)
+            {
+                canvas.AddRectangle(hitBox.X + Width / 2 - 50, hitBox.Y, 4, Height / 2, light1);
+                canvas.AddRectangle(hitBox.X + Width / 2 - 50, hitBox.Y + Height / 2, 4, Height / 2, light2);
+            }
+
+        }
+
+
+        //will swap the light colours
+        public void Animate()
+        {
+            //flip flop the colours
+            if (light1 == Color.White)
+            {
+                light1 = Color.Red;
+                light2 = Color.White;
+            }
+            //flip flop the colours
+            else
+            {
+                light1 = Color.White;
+                light2 = Color.Red;
+            }
+        }
+
+        /// <summary>
+        /// When the car reaches the other side it increases the  
+        /// safe score of the game
+        /// </summary>
+        /// <returns> returns the int that is the score</returns>
+        public override int GetSafeScore()
+        {
+            return Math.Abs((int)Speed+Width);
+        }
+
+        /// <summary>
+        /// if the car is hit on the way out of the game the we will 
+        /// decrease the score of the game
+        /// </summary>
+        /// <returns>returns the negative of the score</returns>
+        public override int GetHitScore()
+        {
+            return GetSafeScore() * -1;
+        }
+    }
+
+
+    /// <summary>
+    /// car that moves vertically initialized to a random color
+    /// </summary>
+    class SmartCar : VerticalCar
+    {
+        //protected color memeber which is the colour of the body of the car
+        protected Color col = RandColor.GetColor();
+        /// <summary>
+        /// derived from the base vertical class
+        /// </summary>
+        /// <param name="speed">initializes the speed of the car</param>
+        /// <param name="width">initializes the width of the car </param>
+        /// <param name="height">and finally the height of the car</param>
+        public SmartCar(float speed = 8, int width = 20, int height = 20) : base(speed, width, height, Color.Purple) { }
+
+        /// <summary>
+        /// override of the getrect method that will create the x and y of the car
+        /// </summary>
+        /// <returns> returns the new rectangle</returns>
+        public override Rectangle GetRect()
+        {
+            return new Rectangle((int)XCoor+5, (int)YCoor, Width, Height);
+        }
+
+
+        /// <summary>
+        /// will show our smart car 
+        /// </summary>
+        protected override void VShowCar()
+        {
+            //get a box that will be our 'hitbox'
+            Rectangle hitBox = GetRect();
+            ////add some wheels
+            //canvas.AddRectangle(hitBox.X - 2, hitBox.Y)
+            //add the car wit hte body and the colo
+            canvas.AddRectangle(hitBox, col);
+        }
+
+        /// <summary>
+        /// When the car reaches the other side it increases the  
+        /// safe score of the game
+        /// </summary>
+        /// <returns> returns the int that is the score</returns>
+        public override int GetSafeScore()
+        {
+            return Math.Abs((int)Speed + Width);
+        }
+
+        /// <summary>
+        /// if the car is hit on the way out of the game the we will 
+        /// decrease the score of the game
+        /// </summary>
+        /// <returns>returns the negative of the score</returns>
+        public override int GetHitScore()
+        {
+            return GetSafeScore() * -1;
+        }
+    }
+
 }
