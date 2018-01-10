@@ -1,0 +1,9 @@
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\bin\Debug\Kaitlyn-ICA1.exe.config
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\bin\Debug\Kaitlyn-ICA1.exe
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\bin\Debug\Kaitlyn-ICA1.pdb
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\obj\Debug\Kaitlyn-ICA1.csprojResolveAssemblyReference.cache
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\obj\Debug\Kaitlyn_ICA1.Form1.resources
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\obj\Debug\Kaitlyn_ICA1.Properties.Resources.resources
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\obj\Debug\Kaitlyn-ICA1.csproj.GenerateResource.Cache
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\obj\Debug\Kaitlyn-ICA1.exe
+C:\Users\kmurphy23\Desktop\Kaitlyn-ICA1\Kaitlyn-ICA1\obj\Debug\Kaitlyn-ICA1.pdb
