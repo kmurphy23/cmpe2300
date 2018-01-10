@@ -126,6 +126,7 @@ namespace Kaitlyn_ICA1
         private void SetMap(Bitmap map)
         {
             pictureBox1.Image = map;
+            original = map;
         }
 
     }
